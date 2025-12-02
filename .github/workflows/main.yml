@@ -11,6 +11,9 @@ jobs:
         with:
           node-version: '20'
       - run: npm install
+      - run: ls -la       
+      - run: node -v       
+      - run: npm -v        
       - run: npm test
 
   docker_build:
